@@ -41,9 +41,9 @@ public class Main {
         set.insert(a); set.insert(b); set.insert(c);
         System.out.println(set.maximum());
         System.out.println(set.minimum());
-        System.out.println(set.search(3).satelliteData());
         System.out.println(set.toString());
-        set.delete(c);
+        set.delete(set.search(5));
         System.out.println(set.toString());
+        
     }
 }

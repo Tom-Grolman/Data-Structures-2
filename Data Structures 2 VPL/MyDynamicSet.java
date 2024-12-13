@@ -56,8 +56,11 @@ public class MyDynamicSet<T> {
 
 	public String toString() {
 		String s = "";
-		for(int i = 0; i < array.size(); i++)
-			s = s + this.search(i).satelliteData().toString() + " ";
+		Element<T> curr = minimum();
+		while(curr != null) {
+			s = s + curr.toString();
+			curr = successor(curr);
+		}
 		return s;
 	}
 }
