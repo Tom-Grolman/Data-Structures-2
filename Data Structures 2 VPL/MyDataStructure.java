@@ -12,6 +12,10 @@ public class MyDataStructure {
 	/***
      * This function is the Init function.
      */
+
+	private int avgQuality;
+	private MyLinkedList<TreeNode<Integer>> junk;
+
 	public MyDataStructure() {
 		throw new UnsupportedOperationException("Delete this line and replace it with your implementation");
 	}

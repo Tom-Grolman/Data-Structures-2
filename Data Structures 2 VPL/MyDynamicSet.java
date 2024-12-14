@@ -2,7 +2,6 @@
  * @param <T> The type of the satellite data of the elements in the dynamic-set.
  */
 public class MyDynamicSet<T> {
-	private MySortedArray<T> array;
 	/*
      * You may add any fields that you wish to add.
      * Remember that the use of built-in Java classes is not allowed,
@@ -15,6 +14,9 @@ public class MyDynamicSet<T> {
 	/***
      * The constructor should initiate an empty dynamic-set.
      */
+
+	private MySortedArray<T> array;
+	
 	public MyDynamicSet() {
 		this.array = new MySortedArray<>();
 	}
@@ -54,6 +56,7 @@ public class MyDynamicSet<T> {
 			return array.get(((ArrayElement<T>) x).index() - 1);
 	}
 
+	// Temporary for testing
 	public String toString() {
 		String s = "";
 		Element<T> curr = minimum();
